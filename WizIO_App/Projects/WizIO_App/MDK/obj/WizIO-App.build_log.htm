@@ -1,0 +1,210 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.24.2.86
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ricky kwon, sky, LIC=S8512-9GY59-M0TNI-T08XU-5EIB7-AHHRD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Basic (256K)  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      CMSIS_AGDI.dll V1.21.12.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\boomw\Downloads\WizIO\WizIO-App\Projects\WizIO-App\MDK\Project.uvproj
+Project File Date:  12/14/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'W7500x'
+assembling startup_w7500x.s...
+compiling system_w7500x.c...
+compiling w7500x_adc.c...
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_adc.c(116): warning:  #940-D: missing return statement at end of non-void function "ADC_GetConversionValue"
+  }
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_adc.c: 1 warning, 0 errors
+compiling w7500x_crg.c...
+compiling w7500x_dualtimer.c...
+compiling w7500x_exti.c...
+compiling w7500x_gpio.c...
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_gpio.c(154): warning:  #188-D: enumerated type mixed with another type
+              GPIO_PinPadConfig(GPIOx, pinpos, pad_value);
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_gpio.c: 1 warning, 0 errors
+compiling w7500x_pwm.c...
+compiling w7500x_rng.c...
+compiling w7500x_ssp.c...
+compiling w7500x_uart.c...
+compiling w7500x_wdt.c...
+compiling w7500x_wztoe.c...
+compiling w7500x_misc.c...
+compiling w7500x_flash.c...
+compiling w7500x_miim.c...
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_miim.c(100): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_CMOS | GPIO_InputBufferEnable | GPIO_LowDrivingStrength;
+..\..\..\Libraries\W7500x_StdPeriph_Driver\src\w7500x_miim.c: 1 warning, 0 errors
+compiling w7500x_rtc.c...
+compiling loopback.c...
+compiling socket.c...
+compiling wizchip_conf.c...
+compiling dhcp.c...
+compiling dns.c...
+compiling main.c...
+..\..\..\src\PlatformHandler\flashHandler.h(8): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT0" (declared at line 54 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT0       (IAP_ERAS + 0)
+..\..\..\src\PlatformHandler\flashHandler.h(9): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT1" (declared at line 55 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT1       (IAP_ERAS + 1)
+..\..\..\src\PlatformHandler\flashHandler.h(10): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_SECT" (declared at line 56 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_SECT       (IAP_ERAS + 2)
+..\..\..\src\PlatformHandler\flashHandler.h(11): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_BLCK" (declared at line 57 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_BLCK       (IAP_ERAS + 3)
+..\..\..\src\PlatformHandler\flashHandler.h(12): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_CHIP" (declared at line 58 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_CHIP       (IAP_ERAS + 4)
+..\..\..\src\PlatformHandler\flashHandler.h(13): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_MASS" (declared at line 59 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_MASS       (IAP_ERAS + 5)
+..\..\..\src\Configuration\ConfigMessage.h(43): warning:  #64-D: declaration does not declare anything
+      ;
+..\..\..\src\Configuration\ConfigMessage.h(44): error:  #618: struct or union declares no named members
+  }__attribute__((packed)) WIZnet_Discovery_All;
+..\..\..\src\callback\dhcp_cb.h(4): warning:  #1295-D: Deprecated declaration dhcp_assign - give arg types
+  void dhcp_assign();
+..\..\..\src\callback\dhcp_cb.h(5): warning:  #1295-D: Deprecated declaration dhcp_conflict - give arg types
+  void dhcp_conflict();
+..\..\..\src\main.c(117): error:  #268: declaration may not appear after executable statement in block
+      uint8_t tmpstr[6] = { 0, };
+..\..\..\src\main.c(194): warning:  #188-D: enumerated type mixed with another type
+          UpdateAnalogInValue(analog_in_count);
+..\..\..\src\main.c(200): warning:  #188-D: enumerated type mixed with another type
+          UpdateDigitalInValue(digital_in_count);
+..\..\..\src\main.c(206): warning:  #188-D: enumerated type mixed with another type
+          UpdateDigitalOutValue(digital_out_count);
+..\..\..\src\main.c(224): warning:  #111-D: statement is unreachable
+      return 0;
+..\..\..\src\main.c(78): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i, j;
+..\..\..\src\main.c(78): warning:  #177-D: variable "j" was declared but never referenced
+      uint8_t i, j;
+..\..\..\src\main.c: 15 warnings, 2 errors
+compiling retarget.c...
+compiling w7500x_it.c...
+compiling ConfigData.c...
+..\..\..\src\Configuration\ConfigMessage.h(43): warning:  #64-D: declaration does not declare anything
+      ;
+..\..\..\src\Configuration\ConfigMessage.h(44): error:  #618: struct or union declares no named members
+  }__attribute__((packed)) WIZnet_Discovery_All;
+..\..\..\src\Configuration\ConfigData.c: 1 warning, 1 error
+compiling dhcp_cb.c...
+compiling ConfigMessage.c...
+..\..\..\src\Configuration\ConfigMessage.h(43): warning:  #64-D: declaration does not declare anything
+      ;
+..\..\..\src\Configuration\ConfigMessage.h(44): error:  #618: struct or union declares no named members
+  }__attribute__((packed)) WIZnet_Discovery_All;
+..\..\..\src\Configuration\ConfigMessage.c(308): error:  #167: argument of type "__packed uint16_t *" is incompatible with parameter of type "const void *restrict"
+      memcpy(&port, &firmware_upload_info.configtool_info.port, sizeof(uint16_t));
+..\..\..\src\Configuration\ConfigMessage.c(515): error:  #167: argument of type "__packed uint16_t *" is incompatible with parameter of type "uint16_t *"
+                  recvfrom(sock, (uint8_t *) &wiznet_header, sizeof(WIZnet_Header), remote_info.ip, &remote_info.port);
+..\..\..\src\Configuration\ConfigMessage.c: 1 warning, 3 errors
+compiling Modbus.c...
+..\..\..\src\Modbus\Modbus.c(109): warning:  #188-D: enumerated type mixed with another type
+                  InitDigitalOutWithPwm(i, value->digital_out[i].high_width, value->digital_out[i].low_width);
+..\..\..\src\Modbus\Modbus.c(158): warning:  #188-D: enumerated type mixed with another type
+                      InitDigitalOutWithPwm(0, value->digital_out[0].high_width, value->digital_out[0].low_width);
+..\..\..\src\Modbus\Modbus.c(164): warning:  #188-D: enumerated type mixed with another type
+                      InitDigitalOutWithPwm(0, value->digital_out[0].high_width, value->digital_out[0].low_width);
+..\..\..\src\Modbus\Modbus.c(170): warning:  #188-D: enumerated type mixed with another type
+                      InitDigitalOutWithPwm(1, value->digital_out[1].high_width, value->digital_out[1].low_width);
+..\..\..\src\Modbus\Modbus.c(176): warning:  #188-D: enumerated type mixed with another type
+                      InitDigitalOutWithPwm(1, value->digital_out[1].high_width, value->digital_out[1].low_width);
+..\..\..\src\Modbus\Modbus.c(221): warning:  #188-D: enumerated type mixed with another type
+                      SetDigitalOutHigh(i);
+..\..\..\src\Modbus\Modbus.c(223): warning:  #188-D: enumerated type mixed with another type
+                      SetDigitalOutLow(i);
+..\..\..\src\Modbus\Modbus.c(390): error:  #29: expected an expression
+          for (int i = 0; i < WordDataLength; i++) {
+..\..\..\src\Modbus\Modbus.c: 7 warnings, 1 error
+compiling analogHandler.c...
+..\..\..\src\PlatformHandler\analogHandler.c(45): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_OpenDrainDisable | GPIO_HighDrivingStrength | GPIO_PuPd_UP;
+..\..\..\src\PlatformHandler\analogHandler.c(99): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if ((channel <= g_channel_num) && (channel >= 0)) {
+..\..\..\src\PlatformHandler\analogHandler.c(139): error:  #268: declaration may not appear after executable statement in block
+      struct __analog_in *analog = (struct __analog_in *) GetS2EPacketPointer()->analog_in;
+..\..\..\src\PlatformHandler\analogHandler.c(140): error:  #268: declaration may not appear after executable statement in block
+      struct __analog_in_common *common = (struct __analog_in_common *) &GetS2EPacketPointer()->analog_in_common;
+..\..\..\src\PlatformHandler\analogHandler.c: 2 warnings, 2 errors
+compiling digitalHandler.c...
+..\..\..\src\PlatformHandler\digitalHandler.c(32): warning:  #188-D: enumerated type mixed with another type
+              InitDigitalInWithGpio(i);
+..\..\..\src\PlatformHandler\digitalHandler.c(34): warning:  #188-D: enumerated type mixed with another type
+              InitDigitalInWithPwm(i, digital[i].mode);
+..\..\..\src\PlatformHandler\digitalHandler.c(45): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_SummitTrigger | GPIO_InputBufferEnable;
+..\..\..\src\PlatformHandler\digitalHandler.c(74): warning:  #188-D: enumerated type mixed with another type
+          NVIC_EnableIRQ(gk_DigitalInIrq[num]);
+..\..\..\src\PlatformHandler\digitalHandler.c(150): warning:  #188-D: enumerated type mixed with another type
+                  InitDigitalOutWithGpio(i);
+..\..\..\src\PlatformHandler\digitalHandler.c(152): warning:  #188-D: enumerated type mixed with another type
+                      SetDigitalOutHigh(i);
+..\..\..\src\PlatformHandler\digitalHandler.c(154): warning:  #188-D: enumerated type mixed with another type
+                      SetDigitalOutLow(i);
+..\..\..\src\PlatformHandler\digitalHandler.c(157): warning:  #188-D: enumerated type mixed with another type
+                  InitDigitalOutWithPwm(i, digital[i].high_width, digital[i].low_width);
+..\..\..\src\PlatformHandler\digitalHandler.c(169): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_OpenDrainDisable | GPIO_HighDrivingStrength | GPIO_PuPd_NOPULL;
+..\..\..\src\PlatformHandler\digitalHandler.c(174): warning:  #223-D: function "delay_cnt" declared implicitly
+      delay_cnt(10000);
+..\..\..\src\PlatformHandler\digitalHandler.c: 10 warnings, 0 errors
+compiling flashHandler.c...
+..\..\..\src\PlatformHandler\flashHandler.h(8): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT0" (declared at line 54 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT0       (IAP_ERAS + 0)
+..\..\..\src\PlatformHandler\flashHandler.h(9): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT1" (declared at line 55 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT1       (IAP_ERAS + 1)
+..\..\..\src\PlatformHandler\flashHandler.h(10): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_SECT" (declared at line 56 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_SECT       (IAP_ERAS + 2)
+..\..\..\src\PlatformHandler\flashHandler.h(11): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_BLCK" (declared at line 57 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_BLCK       (IAP_ERAS + 3)
+..\..\..\src\PlatformHandler\flashHandler.h(12): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_CHIP" (declared at line 58 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_CHIP       (IAP_ERAS + 4)
+..\..\..\src\PlatformHandler\flashHandler.h(13): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_MASS" (declared at line 59 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_MASS       (IAP_ERAS + 5)
+..\..\..\src\PlatformHandler\flashHandler.c: 6 warnings, 0 errors
+compiling gpioHandler.c...
+..\..\..\src\PlatformHandler\gpioHandler.c(15): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_OpenDrainEnable | GPIO_HighDrivingStrength | GPIO_PuPd_NOPULL;
+..\..\..\src\PlatformHandler\gpioHandler.c(65): warning:  #188-D: enumerated type mixed with another type
+      GPIO_InitStructure.GPIO_Pad = GPIO_OpenDrainEnable | GPIO_HighDrivingStrength | GPIO_PuPd_DOWN;
+..\..\..\src\PlatformHandler\gpioHandler.c: 2 warnings, 0 errors
+compiling storageHandler.c...
+..\..\..\src\PlatformHandler\flashHandler.h(8): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT0" (declared at line 54 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT0       (IAP_ERAS + 0)
+..\..\..\src\PlatformHandler\flashHandler.h(9): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_DAT1" (declared at line 55 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_DAT1       (IAP_ERAS + 1)
+..\..\..\src\PlatformHandler\flashHandler.h(10): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_SECT" (declared at line 56 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_SECT       (IAP_ERAS + 2)
+..\..\..\src\PlatformHandler\flashHandler.h(11): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_BLCK" (declared at line 57 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_BLCK       (IAP_ERAS + 3)
+..\..\..\src\PlatformHandler\flashHandler.h(12): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_CHIP" (declared at line 58 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_CHIP       (IAP_ERAS + 4)
+..\..\..\src\PlatformHandler\flashHandler.h(13): warning:  #47-D: incompatible redefinition of macro "IAP_ERAS_MASS" (declared at line 59 of "..\..\..\Libraries\W7500x_stdPeriph_Driver\inc\w7500x_flash.h")
+  #define IAP_ERAS_MASS       (IAP_ERAS + 5)
+..\..\..\src\PlatformHandler\storageHandler.c: 6 warnings, 0 errors
+compiling timerHandler.c...
+compiling uartHandler.c...
+..\..\..\src\PlatformHandler\uartHandler.c(17): warning:  #223-D: function "S_UartPuts" declared implicitly
+      S_UartPuts(etxt);
+..\..\..\src\PlatformHandler\uartHandler.c: 1 warning, 0 errors
+".\obj\WizIO-App.axf" - 9 Error(s), 54 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
